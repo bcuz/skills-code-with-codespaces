@@ -11,7 +11,7 @@ on:
     branches:
       - main
     paths:
-      - "setup.sh"
+      - "install.sh"
 
 # Reference: https://docs.github.com/en/actions/security-guides/automatic-token-authentication
 permissions:
@@ -60,7 +60,7 @@ jobs:
       - name: Check workflow contents, jobs
         uses: skills/action-check-file@v1
         with:
-          file: "setup.sh"
+          file: "install.sh"
           search: "install sl"
 
       # In README.md, switch step 4 for step X.
